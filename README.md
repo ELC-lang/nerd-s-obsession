@@ -17,6 +17,8 @@ elc的rand定义在`elc/base_defs`，点击[这里](https://github.com/ELC-lang/
 - 泛型支持（可以用于任何平凡构造的类型）
 - 比`std::rand`更长的周期以及比`std::mt19937`更小的状态，一切都刚刚好够用  
 
+[在在线编译中使用elc::rand的示例](https://godbolt.org/z/cY9Ka8vhf)  
+
 ## string
 
 elc的string定义在`elc/string`，点击[这里](https://github.com/ELC-lang/ELC/tree/master/parts/header_file/files/elc/_files/string)查看具体的实现  
@@ -31,3 +33,4 @@ elc的string定义在`elc/string`，点击[这里](https://github.com/ELC-lang/E
 - 其他elc函数的支持（比如不同于`std::to_string`的可以进行无损来回转换的`elc::to_string`等）
 
 与`std::string`一同benchmark的结果[点此查看](https://steve02081504.github.io/gbenchmark_webui/?file=https%3A%2F%2Fraw.githubusercontent.com%2FELC-lang%2FELC%2Fmaster%2Fparts%2Fheader_file%2Ftest%2Felc_string_VS_std_string_BENCHMARK%2Fresult.json)  
+[在在线编译中使用elc::string的示例](https://godbolt.org/z/3eav315a1)  
