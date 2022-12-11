@@ -35,6 +35,10 @@ elc的string定义在`elc/string`，点击[这里](https://github.com/ELC-lang/E
 与`std::string`一同benchmark的结果[点此查看](https://steve02081504.github.io/gbenchmark_webui/?file=https%3A%2F%2Fraw.githubusercontent.com%2FELC-lang%2FELC%2Fmaster%2Fparts%2Fheader_file%2Ftest%2Felc_string_VS_std_string_BENCHMARK%2Fresult.json)  
 [在在线编译中使用elc::string的示例](https://godbolt.org/z/3eav315a1)  
 
+需要注意的是，在上面的在线编译示例中目前有两个小问题，一个是编译器的ice（会导致程序崩溃），而另一个是STL的实现问题（导致编译中警告）  
+编译器ice绝赞调查中，[详见此处](https://developercommunity.visualstudio.com/t/Optimisation-makes-code-crash/10215710)  
+STL的实现问题已经在<https://github.com/microsoft/STL/issues/3246>被修复，等待下一版本的更新即可  
+
 ## io
 
 elc的io定义在`elc/stream`，由于实现较为分散，所以这里只给出`base_stream`的实现链接，[点此查看](https://github.com/ELC-lang/ELC/tree/master/parts/header_file/files/elc/_files/base_stream)  
