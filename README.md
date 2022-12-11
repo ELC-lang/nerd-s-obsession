@@ -34,3 +34,15 @@ elc的string定义在`elc/string`，点击[这里](https://github.com/ELC-lang/E
 
 与`std::string`一同benchmark的结果[点此查看](https://steve02081504.github.io/gbenchmark_webui/?file=https%3A%2F%2Fraw.githubusercontent.com%2FELC-lang%2FELC%2Fmaster%2Fparts%2Fheader_file%2Ftest%2Felc_string_VS_std_string_BENCHMARK%2Fresult.json)  
 [在在线编译中使用elc::string的示例](https://godbolt.org/z/3eav315a1)  
+
+## io
+
+elc的io定义在`elc/stream`，由于实现较为分散，所以这里只给出`base_stream`的实现链接，[点此查看](https://github.com/ELC-lang/ELC/tree/master/parts/header_file/files/elc/_files/base_stream)  
+与`std`中的io相比，elc的io有更多的优点：
+
+- 指针输出包含更详细的信息（包括指针指向的类型名称和指针的值）  
+- 作为utf32的`elc::char_t`原生支持  
+- 得益于`elc::to_string`，无损并且高精度的算数类型转换  
+- 更为完善的输出逻辑（比如对于非`true`也非`false`的`bool`值，相比`std`的大部分实现而言，elc的输出会是`other(值内容)`，而不是`true`）
+
+[在在线编译中使用elc::out的示例](https://godbolt.org/z/55KGGPrGY)  
